@@ -13,7 +13,7 @@
 // Du skal løse følgende:
 // 992 + 237 = ?
 // 44 - 12 = ?
-// 142 * 23 = ?
+// 142 * 23 = ? 
 // 94 / 23  = ?
 // Svarene skal ligesom opgaven ovenfor vises i hver sin console.log
 //_______________________________________________________________________________

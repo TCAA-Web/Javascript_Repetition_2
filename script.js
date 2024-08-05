@@ -98,32 +98,30 @@ button2.addEventListener('click', () =>{
 
 //Opgave 6
 
-document.addEventListener('DOMContentLoaded', () => {
-    const pattern = /^(?=.*[A-Z])(?=.*[^A-Za-z]).{8,20}$/;
-    const messageElement = document.getElementById('message2'); 
-    const inputField = document.getElementById('inputField'); 
+document.getElementById('button2').addEventListener('click', function() {
+    const inputField = document.getElementById('inputField').value;
+    const message = document.getElementById('message2');
+    message.style.color = 'red';
+    
+    // Regular expressions for validation
+    const lengthCheck = /^.{8,20}$/;
+    const uppercaseCheck = /[A-Z]/;
+    const symbolCheck = /[\W_]/; 
 
-    inputField.addEventListener('click', () => {
-        const input2 = inputField.value;
-
-        // Check if the input matches the pattern
-        if (pattern.test(input2)) {
-            messageElement.innerHTMLt = 'Valid input';
-            messageElement.style.color = 'green';
-        } else {
-            // Provide specific error messages
-            if (input2.length > 20) {
-                messageElement.textContent = 'Input must not exceed 20 characters';
-            } else if (!/[A-Z]/.test(input2)) {
-                messageElement.textContent = 'Enter at least one uppercase letter';
-            } else if (!/[^A-Za-z]/.test(input2)) {
-                messageElement.textContent = 'Enter at least one character that is not a letter';
-            } else {
-                messageElement.textContent = 'Input does not match the required pattern';
-            }
-            messageElement.style.color = 'red';
-        }
-    });
+    // Check if input meets all the conditions
+    if (!lengthCheck.test(inputField)) {
+        message.textContent = "Input must be between 8 and 20 characters long";
+       
+    } else if (!uppercaseCheck.test(inputField)) {
+        message.textContent = "Input must contain at least one uppercase letter";
+        
+    } else if (!symbolCheck.test(inputField)) {
+        message.textContent = "Input must contain at least one symbol";
+      
+    } else {
+        message.textContent = "Input is valid!";
+        message.style.color = 'green';
+    }
 });
 
 

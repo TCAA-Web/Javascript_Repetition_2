@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(230, 227, 227);
+} 
+
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+    margin-top: 2rem;
+    
+}
+.square div {
+    width: 20vw;
+    height: 35vh;
+    border: 5px solid black;
+}

@@ -26,7 +26,7 @@
 // Opgave 4
 // Du skal i denne opgave lave en funktion der kan tjekke typeof på alle key value pairs i et objekt.
 // Funktionen skal console.logge typen af hver eneste value i et objekt.
-// Objektet der skal tjekkes skal kunne sendes ind i funktionen som argument.
+// Objektet der skal tjekkes skal kunne sendes ind i funktionen som argument. 
 //__________________________________________________________________________________________________
 
 // Opgave 5

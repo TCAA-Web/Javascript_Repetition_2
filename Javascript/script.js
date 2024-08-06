@@ -12,6 +12,12 @@ console.log(`${str} ${str.length} ${str2} `);
 
 lengthWord();
 
+// function getLength(str){
+//     return str.length;
+// }
+// let word = 'Denamrk';
+// console.log(${word} er {getLength()})
+
 //Opgave 2
 //Create Object
 

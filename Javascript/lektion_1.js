@@ -108,24 +108,24 @@ document.getElementById('inputForm').addEventListener('submit', function(event) 
 // måle om brugeren fører musen ind over hver af de fire firkanter. Når musen rammer en firkant skal den skifte farve til en
 // tilfældigt genereret farve.
  
-document.addEventListener('DOMContentLoaded', () => {
-    const square = document.querySelector('.square');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const square = document.querySelector('.square');
 
-    const colors = ['#FF5733', '#33FF57', '#3357FF', '#F0F033', '#C302DE', '#0FF0EC' ];
+//     const colors = ['#FF5733', '#33FF57', '#3357FF', '#F0F033', '#C302DE', '#0FF0EC' ];
 
-    function getRandomColor() {
-        const randomIndex = Math.floor(Math.random() * colors.length);
-        return colors[randomIndex];
-    }
+//     function getRandomColor() {
+//         const randomIndex = Math.floor(Math.random() * colors.length);
+//         return colors[randomIndex];
+//     }
 
-    square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = getRandomColor();
-    });
+//     square.addEventListener('mouseover', () => {
+//         square.style.backgroundColor = getRandomColor();
+//     });
 
-    square.addEventListener('mouseleave', () => {
-        square.style.backgroundColor = '#ccc'; 
-    });
-});
+//     square.addEventListener('mouseleave', () => {
+//         square.style.backgroundColor = '#ccc'; 
+//     });
+// });
 
 //_________________________________________________________________________________
 

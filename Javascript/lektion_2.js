@@ -7,12 +7,35 @@
 // Din funktion skal altså tage imod et argument (din string der skal tjekkes) og returnere et resultat i form af et tal.
 // Funktionen skal kaldes og du skal gemme resultatet, hvorefter string + resultat skal printes i en console.log,
 // så der står i konsollen: "Relativitetsteori er 17 bogstaver langt".
+
+//CHECK LENGHT OF STRING
+
+function stringLenght() {
+    let text = "Relativitetsteori";
+    let length = text.length;
+
+    document.getElementById("countWord").innerHTML = length;
+    console.log("Relativitetsteori er "+length+" bogstaver langt");
+}
+stringLenght()
+
+
 //________________________________________________________________________________________________
 
 // Opgave 2
 // Du skal i denne opgave lave et objekt der indeholde følgende:
 // - Fornavn, Efternavn, Email, Telefonnummer, Adresse og Postnummer.
 // Objektet skal printes ud i en console.log
+
+ const information = {
+    name: "Tyrone",
+    lastname: "Homeboy",
+    email: "joe5124@gmail.com",
+    phone: "135154225",
+    adresse: "Poopooplace 5",
+    postnumber: "2555",
+ }
+ console.log(information);
 //________________________________________________________________________________________________
 
 // Opgave 3

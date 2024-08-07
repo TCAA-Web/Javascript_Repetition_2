@@ -82,17 +82,17 @@ checkType(information);
 // Den skal som minimum være i stand til at tage imod argumenterne; type, classname og id.
 // Et eks. på at kalde en sådan funktion kunne se således ud: GenerateElement('div', 'someClassName', 'myID')
 
- function elementGenerator(obj) {
-    let e;
-    try {
-        for (const key in obj) {
-            switch (key) {
-                case "type":
-                    e = document
-            }
-        }
-    }
- }
+//  function elementGenerator(obj) {
+//     let e;
+//     try {
+//         for (const key in obj) {
+//             switch (key) {
+//                 case "type":
+//                     e = document
+//             }
+//         }
+//     }
+//  }
 
 //__________________________________________________________________________________________________
 

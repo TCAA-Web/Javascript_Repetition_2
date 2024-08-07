@@ -7,12 +7,35 @@
 // Start med at lave en <div> som du henter ind i dit script med en getElementById metode.
 // Du skal i første omgang loope igennem alle indexes i arrayet og vise alle produkterne i din div.
 // Produkterne skal opstilles i et css grid eller en flexbox, med pris, billede, produkt navn, antal og popularitet (0-10).
+
+ import {storeProducts} from "./storeProducts.js";
+ console.log(storeProducts);
+    storeProducts.map((item)=>{
+        console.log(item.title);
+        document.getElementById("productsMain").innerHTML = "Products"; 
+    }) 
+   
+
+  
+
 //________________________________________________________________________________________
 
 // Opgave 2
 // Du skal nu lave en funktion der kan simulere at du tilføjer et af produkterne fra opgave 1 til en kurv.
 // Din funktion skal derfor kunne kaldes med en onclick på hver af produkterne og kalde en alert
 // med følgende tekst: Du har tilføjet "Produktets navn" til din kurv.
+
+function storeProducts() {
+    onclick = storeProducts {
+         addEventListener.storeProducts
+    }
+}
+console.log(storeProducts);
+
+storeProducts();
+
+
+
 //________________________________________________________________________________________
 
 // Opgave 3

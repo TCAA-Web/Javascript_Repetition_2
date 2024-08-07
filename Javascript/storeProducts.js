@@ -112,3 +112,43 @@ export const storeProducts = [
       "https://images.unsplash.com/photo-1594501432907-91214bfdd928?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
+
+const divElem = document.getElementById('myDiv');
+console.log(divElem);
+
+function addProduct(id){
+  const button = document.getElementById('myBtn');
+
+  const shoppingCart = [];
+  
+    let product = storeProducts[id];
+    shoppingCart.push(product);
+    console.log(shoppingCart);
+   
+    alert(`You have added successfully: ${product.title}`);
+    
+  };
+
+   //addProduct();
+
+
+   window.addProduct=addProduct;
+
+for ( let i = 0; i < storeProducts.length; i++){
+  console.log(storeProducts[i]);
+
+  const newDiv = document.createElement('div');
+
+  newDiv.innerHTML = `<ul>
+                          <li><img src="${storeProducts[i].image}"></li>
+                          <li><b>Title:</b> ${storeProducts[i].title} </li>
+                          <li><b> Price:</b> ${storeProducts[i].price} </li>
+                          <li><b> Popularity:</b> ${storeProducts[i].popularity} </li>
+                          <li><b>Quantity: </b> ${storeProducts[i].quantity} </li>
+                          <button id="myBtn" onclick="addProduct(${i})">Add</button>
+                          
+                      </ul>`
+
+  divElem.appendChild(newDiv);
+}
+

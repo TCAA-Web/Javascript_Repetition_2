@@ -7,7 +7,8 @@
 // Start med at lave en <div> som du henter ind i dit script med en getElementById metode.
 // Du skal i første omgang loope igennem alle indexes i arrayet og vise alle produkterne i din div.
 // Produkterne skal opstilles i et css grid eller en flexbox, med pris, billede, produkt navn, antal og popularitet (0-10).
-//________________________________________________________________________________________
+________________________________________________________________________________________
+
 
 // Opgave 2
 // Du skal nu lave en funktion der kan simulere at du tilføjer et af produkterne fra opgave 1 til en kurv.

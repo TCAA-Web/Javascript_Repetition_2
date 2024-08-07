@@ -14,6 +14,7 @@
         console.log(item.title);
         document.getElementById("productsMain").innerHTML = "Products"; 
     }) 
+    
    
 
   
@@ -24,15 +25,6 @@
 // Du skal nu lave en funktion der kan simulere at du tilføjer et af produkterne fra opgave 1 til en kurv.
 // Din funktion skal derfor kunne kaldes med en onclick på hver af produkterne og kalde en alert
 // med følgende tekst: Du har tilføjet "Produktets navn" til din kurv.
-
-function storeProducts() {
-    onclick = storeProducts {
-         addEventListener.storeProducts
-    }
-}
-console.log(storeProducts);
-
-storeProducts();
 
 
 

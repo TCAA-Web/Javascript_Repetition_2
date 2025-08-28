@@ -1,5 +1,5 @@
 /************************************
- * Lektion 2 - Objects & functions  *
+ * Lektion 2 - Objekter og funktioner  *
  ************************************/
 
 // Opgave 1
